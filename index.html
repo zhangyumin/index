@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zhangyumin</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+
+			/* Base style */
+			html {
+				/*font-size: 24px;*/
+			}
+			body {
+				/*margin: 0 0 40px;*/
+				/*font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+				font-weight: 100;*/
+				color: #666666;
+				background-color: #F9F9F9;
+				word-break: break-word;
+			}
+			a, a:visited, a:hover, a:link {
+				color: inherit;
+				outline: 0;
+			}
+			small {
+				font-weight: 100;
+			}
+			p {
+				font-size: 1rem;
+				line-height: 1.4rem;
+			}
+			dl dt {
+				font-weight: bold;
+			}
+			dl dd {
+				margin-bottom: 14px;
+			}
+			button, .button {
+				margin: 0; padding: 8px;
+				border-radius: 10px;
+				border: 1px solid #666666;
+				color: #666666;
+				background-color: rgba(0,0,0,0);
+				font-size: 0.6rem;
+				font-weight: 100;
+				text-decoration: none;
+				cursor: pointer;
+				outline: 0;
+			}
+			i {
+				background-color: rgba(0,0,0,0.1);
+				border-radius: 4px;
+			}
+
+			/* Common components */
+			.demo-content {
+				margin: auto;
+				max-width: 960px;
+				padding: 0 20px;
+				padding-top: 50px;
+			}
+			.smaller {
+				margin: 4px 0;
+				font-size: 0.75rem;
+				line-height: 1.05rem;
+			}
+			.bigger {
+				font-size: 1rem;
+				line-height: 1.4rem;
+			}
+			.clearer {
+				clear: both;
+			}
+			.striked {
+				text-decoration: line-through;
+			}
+			.italic {
+				font-style: italic;
+			}
+			.col3 {
+				width: 33.33%;
+				float: left;
+				text-align: center;
+				border-bottom-color: #666;
+				border-bottom-style: solid;
+			}
+			.col-container {
+				padding: 0 12px;
+			}
+			.col3 p {
+				font-size: 0.75rem;
+				line-height: 1.05rem;
+			}
+			.code {
+				overflow: hidden;
+				margin: 0; padding: 10px;
+				border: none;
+				background-color: rgba(0,0,0,0.1);
+				font-size: 0.6125rem;
+				line-height: 0.8575rem;
+				font-family: monospace;
+			}
+			.bloc {
+				color: #f9f9f9;
+				/*padding: 1px 0 30px;*/
+				border-color: #f9f9f9;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+			}
+			/* Colors */
+			.bloc-head { background: #5aa8c5; padding: 30px; }
+			.bloc-anim { background: #2e2e2e; }
+			.bloc-documentation { background: #d36281; }
+			.bloc-example { background: #4fe084; }
+
+			/* Custom */
+			#hi-there {
+				width: 100%;
+			}
+			.intro-links {
+				text-align: right;
+			}
+			.example-description {
+				margin-left: 440px;
+			}
+			.example-svg {
+				float: left;
+			}
+			#polaroid {
+				width: 400px; height: 320px;
+			}
+			.goodbye-head {
+				font-size: 1.5rem;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.goodbye-sub {
+				font-size: 0.875rem;
+				text-align: center;
+				margin: 0 0 20px;
+			}
+
+			/* Media queries */
+			@media (min-width: 768px) {
+				.col3 { border-bottom: none; }
+			}
+
+			@media (max-width: 767px) {
+				.code { overflow: scroll; }
+				#polaroid { width: 100%; max-height: 300px; }
+				.example-description { margin-left: 0; }
+
+				.col3 { width: 100%; float: none; margin-bottom: 25px; padding-bottom: 25px; border-bottom-width: 1px; min-height: 200px; }
+				.col3:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom-width: 0px; }
+			}
+
+			@media (min-width: 481px) and (max-width: 767px) {
+				#polaroid { width: 100%; max-height: 300px; }
+				.example-description { margin-left: 0; }
+
+				.col3:nth-child(2n) svg {
+					width: 200px;
+					float: right;
+				}
+				.col3:nth-child(2n) .col-container {
+					text-align: right;
+					margin-right: 200px;
+				}
+				.col3:nth-child(2n+1) svg {
+					width: 200px;
+					float: left;
+				}
+				.col3:nth-child(2n+1) .col-container {
+					text-align: left;
+					margin-left: 200px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.col-container { padding: 0px; }
+				#polaroid { width: 100%; max-height: 260px; }
+			}
+		</style>
+</head>
+<body>
+	<div class="container">	
+		<div class="bloc bloc-anim">
+			<div class="demo-content">
+				<div>
+					<div class="col1">
+						<svg id="obturateur1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="400px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
+							<circle fill="none" stroke="#0168b8" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="90"/>
+							<circle fill="none" stroke="#5db95b" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="85.74"/>
+							<circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="72.947"/>
+							<circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="39.74"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="34.042" y1="131.189" x2="67.047" y2="77.781"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="31.306" y1="75.416" x2="92.41" y2="60.987"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="68.81" y1="34.042" x2="122.219" y2="67.046"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="124.584" y1="31.305" x2="139.013" y2="92.409"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="165.957" y1="68.809" x2="132.953" y2="122.219"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="168.693" y1="124.584" x2="107.59" y2="139.012"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="131.19" y1="165.957" x2="77.781" y2="132.953"/>
+							<line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="75.417" y1="168.693" x2="60.987" y2="107.59"/>
+ 							<image id='joker' xlink:href="./img/joker.png" x="70" y="65" height="60px" width="60px" style="display: none"/> 
+						</svg>
+					</div>
+
+				</div>
+				<div class="col2">
+					<nav class="navigation">
+						<div class="wrapper">
+							<ul class="navigation-list ul-reset">
+								<li class="navigation-item ib">
+									<a href="#" class="navigation-link">
+										博客
+									</a>
+								</li>
+								<li class="navigation-item ib">
+									<a href="#" class="navigation-link">
+										Github
+									</a>
+								</li>
+								<li class="navigation-item ib">
+									<a href="#" class="navigation-link">
+										项目
+									</a>
+								</li>
+								<li class="navigation-item ib">
+									<a href="#" class="navigation-link">
+										关于
+									</a>
+								</li>
+								<li class="navigation-item ib">
+									<a href="#" class="navigation-link">
+										Email
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="clearer"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/vivus.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+	<script>
+		obt1 = new Vivus('obturateur1', {type: 'delayed', duration: 150},function(){
+			$('#joker').fadeIn(3000);
+		}),
+		pola = new Vivus('polaroid', {type: 'scenario-sync', duration: 20, forceRender: false});
+	</script>
+</body>
+</html>
