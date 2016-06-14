@@ -4,20 +4,130 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>项目</title>
+	<title>我的项目</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.text{
+			/*width: 80%;*/
+			border: 5px dashed #5db95b;
+    			padding: 20px;
+		}
+		.title{
+			text-align: center;
+		}
+		.demo{
+			border-radius: 10px;
+		}
+		h1{
+			margin: 0px;
+		}
+		.btn{	
+			margin: auto;
+			text-align: center;
+			font-size: 18px;
+			line-height: 1.33;
+			border-radius: 6px;
+			color: #fff;
+			background-color: #5db95b;
+			border-color: #357ebd;
+			display: inline-block;
+			padding: 6px 12px;
+			margin-bottom: 0;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.42857143;
+			text-align: center;
+			white-space: nowrap;
+			cursor: pointer;
+			user-select: none;
+			border: 1px solid transparent;
+			border-radius: 4px;
+		}
+		.viewbtn{
+			text-align: center;
+		}
+		.view{
+			float: left;
+			padding-right: 10px;
+			width: 45%;
+		}
+		.detail{
+			width: 55%;
+			float: left;
+			font-size: 20px;
+			color: #fff;
+		}
+		.work{
+			margin-top: 40px;
+		}
+		p{
+			border-left: 3px solid orange;
+			padding-left: 10px;
+			margin-bottom: 15px;
+		}
+		.work p{
+			border: none;
+			padding-right: 8px;
+		}
+		.clear{
+			clear:both;
+		}
+		.theme{
+			width: 6%;
+			float: left;
+			border-left: 3px solid orange;
+			border-right: 3px solid orange;
+		}
+		.content{
+			width: 94%;
+			float: left;
+		}
+	</style>
 </head>
 <body>
 	<div class="scene">
 	  <div class="page page-1 active">
 	    <div class="page--rotater"></div>
 	    <div class="page--content">
-	      <!--<h1>Page 1</h1>-->
-	      	<header class="htmleaf-header">
-			<h1>HTML5 SVG超酷雷达扫描式页面切换特效 </h1>
-		</header>
+	    	<div class="title"><h1>PlantAPA</h1></div>
+	    	<div class="text">
+	    		<div class="view">
+	    			<div class="pic">
+	    				<img class="demo" src="./img/plantapa.png" width="100%" height="100%">
+	    			</div>
+	    			<div class="viewbtn">
+	    				<a class="btn" href="http://www.zhangyumin.me/plantapa" role="button" target="_blank"><i class="fa fa-eye"></i> 访问网站</a>
+	    			</div>
+	    		</div>
+	    		<div class="detail">
+	    			<div class="info">
+		    			<p>PlantAPA是一个植物全基因组poly(A)位点数据可视化和分析平台，从2015年3月1日开始到2016年5月20日结束，并且论文于2016年6月6日被frontiers in Plant Science | Plant Genetics and Genomics (SCI收录，IF=3.948) 接收。</p>
+		    			<p>PlantAPA提供了多种样式的、可交互的数据可视化方法，并且与基因组浏览器无缝连接，可以实现对不同情况下poly(A)位点表达量信息的描述。通过PlantAPA，用户可以使用平台提供的工具来分析不同区域上的poly(A)位点数据，比如DE gene, DE pac等等。除此之外用户还可以上传自己的short reads 、ESTs 及 poly(A) site extraction数据来进一步研究分析。</p>
+		    		</div>
+		    		<div class="work">
+		    			<div  class="theme"><p><br><br><br>工<br><br><br>作<br><br><br></p></div>
+		    			<div  class="content">
+		    			<p>
+		    				1.完成用户数据上传、数据过滤、分析处理、数据可视化及数据下载等功能。
+		    			</p>
+		    			<p>
+		    				2.使用 PHP 进行逻辑处理、数据库增改删查、其它应用接口调用等。 JavaScript 实现前端页面的功能，包括数据可视化效果。平台中多出使用了Jquery，并且用到了Ajax的无刷新提交。
+		    			</p>
+		    			<p>
+		    				3.独立完成，开发期间包括三个版本的更新，后期对网站进行了大量的测试及 bug 修复。
+		    			</p>
+		    			<p>
+		    				4.基于该平台的论文已经被期刊接收，<a href="http://journal.frontiersin.org/article/10.3389/fpls.2016.00889/full" target="_blank">点击查看</a>。
+		    			</p>
+		    			</div>
+		    			<div class="clear"></div>
+		    		</div>
+	    		</div>
+	    		<div class="clear"></div>
+	    	</div>
 	    </div>
 	  </div>
 	  <!-- page end -->
